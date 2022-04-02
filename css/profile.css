@@ -1,0 +1,452 @@
+*{
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0px;
+    line-height: 0, 5;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+/* NAVIGATION */
+
+  label.logo {
+    color: #30557c;
+    /* position: relative; */
+    font-size: 30px;
+    line-height: 50px;
+    padding: 0px 130px;
+    font-weight: 900;
+    font-family: 'Bungee', cursive;
+    letter-spacing: 5px;
+    margin: 50px;
+  }
+
+  ul.navigation {
+    list-style: none;
+    display: flex;
+    float: right;
+    padding-right: 300px;
+    text-align: center;
+    margin: 0px;
+  }
+
+  ul.navigation li a {
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .navigation li a.active {
+    display: inline-block;
+    background: #fff;
+    color: #30557c;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    /* border: 2px solid #F10086; */
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin: 10px 15px 0px 0px;
+  }
+  
+  .navigation li a:hover {
+    color: #fff;
+    border: 2px solid #30557c;;
+    background: #30557c;
+    z-index: 1;
+  }
+  
+  nav.nav {
+    position: fixed;
+    background-color: #fff;
+    width: 1400px;
+    z-index: 1;
+    opacity: 1.85;
+  }
+
+  .nav .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .home .home-content {
+    margin-left: -50px;
+  }
+  
+  /* HEADER */
+
+  .home.home {
+    /* position: fixed; */
+    /* left: -130px;
+      margin: 32px; */
+    padding: 110px 0px 0px 0px;
+   text-align: center;
+    /* width: 100%; */
+  }
+  .home .home-content .text-1 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: -100px;
+    letter-spacing: 10px;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 45px;
+  }
+  
+  .home .home-content .text-1 span {
+    color: #30557c;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  /* CONTENT */
+.container-body {
+  border-radius: 40px;
+  background-color: rgba(244, 252, 223, 0.176);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 150%);
+  margin: 80px 250px 80px 250px;
+}
+
+.biodata {
+  background-color: #30557c;
+    width: 850px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 40px 40px 0px 0px;
+}
+
+
+.biodata h1 {
+  text-align: center;
+  margin: 40px 0px 55px;
+  letter-spacing: 10px;
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'Kanit', sans-serif;
+}
+
+
+.list-biodata {
+ text-align: -webkit-center;
+ letter-spacing: 5px;
+ margin: 100px;
+ line-height: 20px;
+ padding-left: 60px;
+}
+
+.list-biodata table {
+    margin-bottom: 50px;
+}
+
+.table tr {
+    margin: 10px;
+}
+
+.text-akhir {
+    text-align: center;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'Kanit', sans-serif;
+
+      background-color: #30557c;
+        width: 850px;
+        padding: 10px 0px 10px 0px;
+        border-radius: 0px 0px 40px 40px;
+}
+    
+
+
+
+.footer-basic {
+  padding: 40px 0;
+  background-color: whitesmoke;
+  color: #4b4c4d;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+.footer-basic .list-inline {
+  display: flex;
+  text-align: center;
+  margin: 0px 457px 0px;
+}
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 425px) {
+  /* ? Mengatur Navbar */
+  .logo {display: none;}
+  .nav.nav {width: 500px;}
+  ul.navigation {float:none; margin:5px 0px 5px -30px;}
+  .navigation li a.active {margin: 5px;}
+  ul.navigation li a {padding: 8px 15px;}
+  
+  /* *Mengatur Home */
+
+  .home .home-content {margin-left: -75px;}
+
+  .home.home {width: 255px; padding: 110px 0px 30px 110px;}
+  .home.home img {float: none; width: 150px; padding-bottom: 25px; margin: 0px 0px 0px 35px; cursor: pointer;}
+  .home .home-content .text-1 {font-size: 32px; margin: 30px 0px 0px 5px; width: max-content;}
+  .home .home-content .text-2 {letter-spacing: 19px; margin-left: 15px; font-size: 20px;}
+  .home .home-content p { text-align: center; margin: 15px -15px 15px 15px; padding-bottom: 10px;}
+  .home .home-content a { margin: 0px 0px 60px 125px;}
+
+ /* TODO: Mengatur Galeri */
+
+  .container-body {margin: 50px;}
+  .container .heading h1 {width: max-content; margin: 40px 0px 50px 0px; font-size: 30px;}
+  .container .heading p {margin: 0px 50px 130px;}
+
+  .border-content {margin: 6px -3px 6px -3px;}
+  .border-content h1 {font-size: 25px;}
+
+  .border-image:hover { transform: scale(1.02); cursor: pointer;}
+  .border-image {margin: 0px; display: block; transition: 00.3s ease;}
+  
+  .border-image .content-image1 img {width: 270px; margin: 30px; float: none; box-shadow: 10px 10px 10px 0px #c0c0c0;}
+  .content-image1 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+  .border-image .content-image2 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #b0e0e6;}
+  .content-image2 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+  .border-image .content-image3 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #091933;}
+  .content-image3 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+  .border-image .content-image4 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #36364a;}
+  .content-image4 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+  .border-image .content-image5 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #ffb6c1;}
+  .content-image5 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+  .border-image .content-image6 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #ff69b4;}
+  .content-image6 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+
+  /* ? Mengatur Kontak */
+
+  .border-kontak {border-radius: 0%; margin: 15px 0px; width: 325px;}
+  .border-text {border-radius: 0px 0px 0px 0px;}
+  .container-kontak1 { display: block; width: 65px; margin: 10px 20px;}
+  .container-kontak2 { display: block; width: 65px; margin: 10px 20px; }
+  .form-group input { font-size: 12px; width: 175px;}
+}
+
+/* TODO Mengatur Footer */
+.footer-basic ul {font-size: 12px;}
+.footer-basic .list-inline {margin: 0% 10% 0%;}
+
+
+
+
+@media screen and (min-width: 426px) {
+  /* ! Mengatur Navbar */
+
+  .logo {padding: 0px 50px;}
+  ul.navigation {margin-right: 20%;}
+  .navigation li a.active {margin: 5px;}
+  ul.navigation li a {padding: 8px 10px;}
+  
+  /* TODO Mengatur Home */
+  .home.home {width: 100%; padding: 145px 0px 30px 80px;}
+  .home.home img { width: 20%; padding-bottom: 25px; margin: -30px 210px 0px 0px ; cursor: pointer;}
+  .home .home-content .text-1 {font-size: 35px; margin-left: 0px;}
+  .home .home-content .text-2 {letter-spacing: 20px; }
+
+
+  /* ?Mengatur About */
+  .container .heading p {margin: 0px 50px 110px 0px;}
+  /* .container .heading h1 {margin-right: 20%;} */
+
+
+
+  /* TODO Mengatur Galery */
+  .border-content {margin: 0%; margin-right: 5%;}
+
+  .border-image:hover { transform: scale(1.02); cursor: pointer;}
+  .border-image {margin: 0px; display: block; transition: 00.3s ease;}
+  
+  .border-image .content-image1 img {width: 75%; margin: 40px 65px -10px 65px; float: none; box-shadow: 10px 10px 10px 0px #c0c0c0;}
+  .content-image1 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-bottom: 20px; font-size: 15px;}
+
+  .border-image .content-image2 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #b0e0e6;}
+  .content-image2 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+  .border-image .content-image3 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #091933;}
+  .content-image3 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+  .border-image .content-image4 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #36364a;}
+  .content-image4 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+  .border-image .content-image5 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #ffb6c1;}
+  .content-image5 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+  .border-image .content-image6 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #ff69b4;}
+  .content-image6 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+
+  /* ! Mengatur Kontak */
+  .title-kontak h2 { margin:20% 9% 5% 8%;}
+  .border-kontak {border-radius: 0%; margin: 15px 0px; width: 94%;}
+  .border-text {border-radius: 0px 0px 0px 0px;}
+  .container-kontak1 { display: block; width: 55%; margin: 10px 25px;}
+  .container-kontak2 { display: block; width: 55%; margin: 10px 25px; }
+  .form-group input { font-size: 12px; width: 150%;}
+
+  /* *Mengatur Footer */
+  .footer-basic .list-inline {margin: 0px 25% 0px;}
+  .footer-basic ul {font-size: 15px;}
+}
+
+@media screen and (min-width: 768px) {
+  
+  
+  /* ! Mengatur Navbar */
+  .logo {padding: 0px 50px;}
+  ul.navigation {margin-right: 20%;}
+  .navigation li a.active {margin: 5px;}
+  ul.navigation li a {padding: 8px 10px;}
+  
+
+  /* TODO Mengatur Home */
+  .home.home {width: 100%; padding: 190px 0px 30px 110px;}
+  .home.home img { width: 20%; padding-bottom: 25px; margin: -7% 30% 0% 0% ; cursor: pointer;}
+  .home .home-content .text-1 {font-size: 35px; margin-left: 0px;}
+  .home .home-content .text-2 {letter-spacing: 20px; }
+
+
+  /* ?Mengatur About */
+  .container .heading p {margin: 0px 50px 110px 0px;}
+  /* .container .heading h1 {margin-right: 20%;} */
+
+
+  /* TODO Mengatur Galery */
+  .border-content {margin: 0%; margin-right: 7%;}
+
+  .border-image:hover { transform: scale(1.02); cursor: pointer;}
+  .border-image {margin: 0px; display: block; transition: 00.3s ease;}
+  
+  .border-image .content-image1 img {width: 75%; margin: 40px 65px -10px 65px; float: none; box-shadow: 10px 10px 10px 0px #c0c0c0;}
+  .content-image1 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-bottom: 20px; font-size: 15px;}
+
+  .border-image .content-image2 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #b0e0e6;}
+  .content-image2 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+  .border-image .content-image3 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #091933;}
+  .content-image3 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+  .border-image .content-image4 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #36364a;}
+  .content-image4 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+  .border-image .content-image5 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #ffb6c1;}
+  .content-image5 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+  .border-image .content-image6 img {width: 70%; margin: 15%; float: none; box-shadow: -10px 10px 10px 0px #ff69b4;}
+  .content-image6 p {text-align: center; padding-left: 15px; padding-right: 15px; padding-top: 0px; font-size: 15px;}
+
+
+  /* ! Mengatur Kontak */
+  .title-kontak h2 { margin:20% 15% 5% 8%;}
+  .border-kontak {border-radius: 0%; margin: 15px 0px; width: 92%;}
+  .border-text {border-radius: 0px 0px 0px 0px;}
+  .container-kontak1 { display: block; width: 55%; margin: 10px 25px;}
+  .container-kontak2 { display: block; width: 55%; margin: 10px 25px; }
+  .form-group input { font-size: 12px; width: 162%;}
+
+
+  /* *Mengatur Footer */
+  .footer-basic .list-inline {margin: 0px 30% 0px;}
+  .footer-basic ul {font-size: 15px;}
+}
+
+@media screen and (min-width: 992px) {
+
+
+  /* ! Mengatur Navbar */
+  .logo {padding: 0px 50px;}
+  ul.navigation {margin-right: 20%;}
+  .navigation li a.active {margin: 5px;}
+  ul.navigation li a {padding: 8px 10px;}
+  
+
+  /* TODO Mengatur Home */
+  .home.home {width: 100%; padding: 190px 0px 30px 110px;}
+  .home.home img { width: 20%; padding-bottom: 25px; margin: -7% 30% 0% 0% ; cursor: pointer;}
+  .home .home-content .text-1 {font-size: 50px; margin-left: 0px;}
+  .home .home-content .text-2 {letter-spacing: 35px; }
+
+
+  /* ?Mengatur About */
+  .container .heading p {margin: 0px 100px 110px 0px;}
+  /* .container .heading h1 {margin-right: 20%;} */
+
+
+  /* TODO Mengatur Galery */
+  .border-content {margin: 0%; margin-right: 10%;}
+
+  .border-image:hover { transform: scale(1.02); cursor: pointer;}
+  .border-image {margin: 30px; display: flex; transition: 00.3s ease;}
+  
+  .border-image .content-image1 img {width: 30%; margin: 40px 65px 40px 65px; float: right; box-shadow: 15px 15px 20px 0px #c0c0c0;}
+  .content-image1 p {text-align: justify; padding-left: 5%; padding-right: 15px; padding-bottom: 20px; padding-top: 3%; font-size: 16px;}
+
+  .border-image .content-image2 img {width: 30%; margin: 40px 65px 40px 65px; float: left; box-shadow: -15px 15px 20px 0px #b0e0e6;}
+  .content-image2 p {text-align:justify; padding-left: 15px; padding-right: 6%; padding-top: 3%; font-size: 16px;}
+
+  .border-image .content-image3 img {width: 30%; margin: 40px 65px 40px 65px; float: right; box-shadow: 15px 15px 20px 0px #091933;}
+  .content-image3 p {text-align: justify; padding-left: 5%; padding-right: 15px; padding-bottom: 20px; padding-top: 3.6%; font-size: 15px;}
+
+  .border-image .content-image4 img {width: 30%; margin: 40px 65px 40px 65px; float: left; box-shadow: -15px 15px 20px 0px #36364a;}
+  .content-image4 p {text-align:justify; padding-left: 15px; padding-right: 6%; padding-top: 3%; font-size: 16px}
+
+  .border-image .content-image5 img {width: 30%; margin: 40px 65px 40px 65px; float: right; box-shadow: 15px 15px 20px 0px #091933;}
+  .content-image5 p {text-align: justify; padding-left: 5%; padding-right: 15px; padding-bottom: 20px; padding-top: 3.6%; font-size: 15px;}
+
+  .border-image .content-image6 img {width: 30%; margin: 40px 65px 40px 65px; float: left; box-shadow: -15px 15px 20px 0px #36364a;}
+  .content-image6 p {text-align:justify; padding-left: 15px; padding-right: 6%; padding-top: 8%; font-size: 16px}
+
+
+  /* ! Mengatur Kontak */
+  .title-kontak h2 { margin:20% 10% 5% 8%;}
+  .border-kontak {border-radius: 0%; margin: 15px 16%; width: 65%;}
+  .border-text {border-radius: 0px 0px 0px 0px;}
+  .container-kontak1 { display: block; width: 55%; margin: 10px 25px;}
+  .container-kontak2 { display: block; width: 55%; margin: 10px 25px; }
+  .form-group input { font-size: 12px; width: 162%;}
+
+
+  /* *Mengatur Footer */
+  .footer-basic .list-inline {margin: 0px 34% 0px;}
+  .footer-basic ul {font-size: 15px;}
+}

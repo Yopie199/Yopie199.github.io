@@ -1,0 +1,665 @@
+* {
+  scroll-behavior: smooth;
+  list-style: none;
+    text-decoration: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;;
+  margin: 0px;
+	line-height: 1.15;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+/* TODO Navbar responsive Mobile */
+.sidebar {
+  position: fixed;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .4s ease;
+}
+
+.sidebar h1 {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background: #063146;
+  user-select: none;
+}
+
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 26px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid black;
+}
+
+ul li .navbar::hover {
+  padding-left: 50px;
+}
+
+.sidebar ul a i {
+  margin-right: 16px;
+}
+
+input #check {
+  float: right;
+  margin: 50px;
+  opacity: 0.4;
+}
+
+label #btn,
+label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background: #042331;
+  border-radius: 3px;
+}
+
+label #btn {
+  right: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .4s;
+}
+
+label #cancel {
+  z-index: 1111;
+  right: -195px;
+  top: 33px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .4s ease;
+}
+
+#check:checked ~ .sidebar {
+  right: 0px;
+}
+
+#check:checked ~ label #btn {
+  right: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+  right: 195px;
+}
+
+
+
+
+/* Costumisasi header */
+
+/* header.home {
+  background: url(/home.bg.jpg);
+  width: 100%;
+} */
+
+.logo {
+  color: #30557c;
+  /* position: relative; */
+  font-size: 35px;
+  line-height: 55px;
+  padding: 0px 155px;
+  font-weight: 900;
+  font-family: 'Bungee', cursive;
+  letter-spacing: 5px;
+  /* background-image: linear-gradient(150deg, #ffc0a9 0, #ffb5a6 16.67%, #ffa9a2 33.33%, #f29d9d 50%, #de9297 66.67%, #cc8891 83.33%, #bb7f8b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; */
+}
+
+ul.navigation {
+  list-style: none;
+  display: flex;
+  float: right;
+  padding-right: 5px;
+  text-align: center;
+  margin: 0px;
+  margin-right: 130px;
+}
+
+ul.navigation li a {
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.navigation li a.active {
+  display: inline-block;
+  background: #fff;
+  color: #30557c;
+  font-size: 17px;
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  /* border: 2px solid #F10086; */
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin: 8px;
+}
+
+.navigation li a:hover {
+  color: #fff;
+  border: 2px solid #30557c;
+  background: #30557c;
+  z-index: 1;
+}
+
+nav.nav {
+  position: fixed;
+  background-color: white;
+  width: 1400px;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+/* .nav .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+
+/* Home content */
+
+.home .home-content {
+  margin-left: -50px;
+}
+
+
+.home.home img {
+  width: 285px;
+  float: right;
+  margin: -100px 4px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.home.home img:hover {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.2);
+}
+
+.home.home {
+  /* position: fixed; */
+  /* left: -130px;
+    margin: 32px; */
+  padding: 210px;
+
+  /* width: 60%; */
+}
+.home .home-content p {
+  line-height: 35px;
+  font-family: 'Fredoka', sans-serif;
+}
+.home .home-content .text-1 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-left: -3px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.home .home-content .text-2 {
+  font-size: 25px;
+  margin: 5px 0;
+  letter-spacing: 10px;
+  padding-bottom: 20px;
+}
+
+.home .home-content .text-2 span {
+  color: #30557c;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.home .home-content a {
+  display: inline-block;
+  background: #30557c;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-weight: 400;
+  border-radius: 150px;
+  border: 2px solid #30557c;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.home .home-content a:hover {
+  color: #30557c;
+  background: white;
+}
+/* costumisasi about */
+.container .heading p {
+  text-align: center;
+  margin: 0px 50px 130px;
+  line-height: 45px;
+  font-family: 'Fredoka', sans-serif;
+}
+.container .heading h1 {
+  text-align: center;
+  padding: 10px;
+  margin: 40px 40px 40px 40px;
+  letter-spacing: 10px;
+  color: #30557c;
+  font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+}
+
+/* custumisasi galery */
+
+.border-content {
+  border-radius: 0px;
+  background-color: rgba(244, 252, 223, 0.176);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 150%);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 120px;
+}
+
+.border-galeri {
+  background-color: #30557c;
+  width: 950px;
+  margin: -5px 0px 5px 0px;  
+  display: inline-block;
+}
+
+.border-content h1 {
+  text-align: center;
+  margin: 40px 0px 55px;
+  letter-spacing: 10px;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+}
+
+.border-image .content-image1 img {
+  width: 225px;
+  box-shadow: 20px 20px 20px 0px #c0c0c0;
+  /* -webkit-transition: 0.4s ease;
+    transition: 0.4s ease; */
+  margin: 50px;
+  float: right;
+}
+/* .content-item:hover .content-image img {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+} */
+
+.content-image1 p {
+  text-align: justify;
+  padding-top: 55px;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 35px;
+  font-family: 'Fredoka', sans-serif;
+}
+.border-image {
+  border-radius: 0%;
+  background-color: #f7f7f7f7;
+  margin: 50px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  display: flex;
+}
+
+.border-image:hover {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+.border-image .content-image2 img {
+  width: 225px;
+  margin: 50px;
+  float: left;
+  box-shadow: -20px 20px 20px 0px #b0e0e6;
+}
+
+.content-image2 p {
+  text-align: justify;
+  padding-top: 40px;
+  padding-right: 25px;
+  font-size: 16px;
+  line-height: 35px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.border-image .content-image3 img {
+  width: 225px;
+  margin: 50px;
+  float: right;
+  box-shadow: 20px 20px 20px 0px #091933;
+}
+
+.content-image3 p {
+  text-align: justify;
+  padding-top: 30px;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 35px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.border-image .content-image4 img {
+  width: 225px;
+  margin: 50px;
+  float: left;
+  box-shadow: -20px 20px 20px 0px #36364a;
+}
+
+.content-image4 p {
+  text-align: justify;
+  padding-top: 25px;
+  padding-right: 25px;
+  font-size: 16px;
+  line-height: 35px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.border-image .content-image5 img {
+  width: 225px;
+  margin: 50px;
+  float: right;
+  box-shadow: 20px 20px 20px 0px #ffb6c1;
+}
+
+.content-image5 p {
+  text-align: justify;
+  padding-top: 36px;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 35px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.border-image .content-image6 img {
+  width: 225px;
+  margin: 50px;
+  float: left;
+  box-shadow: -20px 20px 20px 0px #FF69B4;
+}
+.content-image6 p {
+  text-align: justify;
+  padding-top: 50px;
+  padding-right: 25px;
+  font-size: 16px;
+  line-height: 35px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* custumisasi kontak */
+
+.title-kontak {
+  text-align: center;
+  margin: 200px 0px 0px;
+  letter-spacing: 10px;
+  color: #30557c;
+  font-family: 'Kanit', sans-serif;
+  font-size: 30px;
+}
+
+.border-kontak {
+  border-radius: 30px;
+  background-color: #f7f7f7f7;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 150%);
+  margin: 50px 300px;
+  padding-bottom: 5px;
+  width: 580px;
+  display: inline-block;
+}
+
+.container-kontak1 {
+  display: flex;
+  margin: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 500px;
+}
+.container-kontak2 {
+  display: flex;
+  margin: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 500px;
+}
+
+.border-text {
+  background-color: #30557c;
+  width: 580px;
+  padding: 5px 0px 5px 0px;
+  border-radius: 25px 25px 0px 0px;    
+}
+
+.border-kontak h2 {
+  text-align: center;
+  color: white;
+  letter-spacing: 10px;
+  font-family: 'Kanit', sans-serif;
+  font-size: 30px;
+
+}
+.border-kontak .form-group {
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  /* border-radius: 8px; */
+}
+
+.form-group input {
+  border: 4px solid whitesmoke;
+  background: white;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  letter-spacing: 5px;
+  width: 155px;
+
+
+}
+
+.form-group input:focus {
+  background-color: #A9A9A9;
+  color: white;
+  transition: 0.4s ease;
+  outline: none;
+
+}
+.form-group textarea {
+  width: 455px;
+  margin: -10px;
+  padding-top: 20px;
+  letter-spacing: 5px;
+  border: 4px solid whitesmoke;
+  background: white;
+  text-align: center;
+}
+
+.form-group textarea:focus {
+  background-color: #A9A9A9;
+  color: white;
+  transition: 0.4s ease;
+  outline: none;
+
+}
+/* .form-group button {
+  background-color: #fff;
+  border-radius: 15px;
+  letter-spacing: 10px;
+  margin: -10px;
+  padding: 10px 10px;
+} */
+
+  .form-group button {
+    display: inline-block;
+    background: #30557c;
+    color: #fff;
+    padding: 10px 10px;
+    margin-top: -10px;
+    border-radius: 15px;
+    border: 2px solid #30557c;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    letter-spacing: 10px;
+    font-size: 15px;
+  }
+  
+  .form-group button:hover {
+    color: #30557c;
+    background: white;
+  }
+
+
+
+
+/* costumisasi footer */
+.footer-basic {
+  padding: 40px 0;
+  background-color: whitesmoke;
+  color: #4b4c4d;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+.footer-basic .list-inline {
+  display: flex;
+  text-align: center;
+  margin: 0px 457px 0px;
+}
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+
+/* TODO Desktop  = 1200px // col - xl 
+  ? Laptop   = 992px  // col - lg
+  !  Tablet  + 768px  // col - md
+  *  Phone   = 480px  // col - sm */
+
+  @media screen and (max-width: 480px) {
+
+    /* ? Mengatur Navbar */
+    .logo {line-height: 80px; font-size: 50px;}
+    .nav.nav {width: 1000px; height: 85px;}
+    ul.navigation {display: none;}
+
+
+    /* TODO Mengatur Navbar Responsive Mobile */
+    #check {float: right; margin-left: 50px; opacity: 0.4;}
+    label #btn {top: 15px; font-size: 45px; right: 45px;}
+    label #cancel {top: 12px; font-size: 50px;}
+    .sidebar {height: 800px; width: 350px; top: -25px; right: -350px;}
+    #check:checked ~ label #cancel {font-size: 50px; right: 275px;}
+    .sidebar ul a {height: 95px; width: 350px; line-height: 70px; font-size: 40px; padding-left: 0px;}
+    .sidebar h1 {font-size: 40px;}
+    .sidebar ul a i {margin-right: 20px;}
+
+    /* *Mengatur Home */
+  
+    .home .home-content {margin-left: -70px;}
+  
+    .home.home {width: 810px; padding: 110px 0px 30px 110px;}
+    .home.home img {float: right; width: 250px; padding-bottom: 25px; margin: 45px -35px 0px 0px; cursor: pointer;}
+    .home .home-content .text-1 {font-size: 55px; margin: 110px 0px 15px 5px; width: max-content;}
+    .home .home-content .text-2 {letter-spacing: 30px; margin-left: 15px; font-size: 40px;}
+    .home .home-content p { text-align: start; margin: 15px -15px 15px 15px; padding-bottom: 10px; font-size: 25px;}
+    .home .home-content a { margin: 0px 0px 60px 15px; padding: 15px 25px; font-size: 25px;}
+  
+
+    /* ? Menggatur About */
+    
+    .container-body {margin: 50px;}
+    .container .heading h1 {width: 930px; margin: 50px 0px 50px 0px; font-size: 45px;}
+    .container .heading p {width: 800px; margin: 0px 50px 130px; font-size: 25px;}
+  
+
+
+   /* TODO: Mengatur Galeri */
+  
+    .border-content {margin: 6px -3px 6px -3px; width: 910px;}
+    .border-content h1 {font-size: 40px;}
+  
+    .border-galeri {width: 910px;}
+
+    .border-image:hover { transform: scale(1.02); cursor: pointer;}
+    .border-image {margin-bottom: 20px; display: block; width: 810px; padding-bottom: 20px;  transition: 00.3s ease;}
+    
+    .border-image .content-image1 img {width: 350px; margin: 30px 230px 30px 230px; float: none; box-shadow: 20px 20px 15px 0px #c0c0c0;}
+    .content-image1 p {text-align: center; padding-left: 25px; padding-right: 25px; padding-top: 0px; font-size: 23px;}
+  
+    .border-image .content-image2 img {width: 350px; margin: 30px 230px 30px 230px; float: none; box-shadow: -20px 20px 15px 0px #b0e0e6;}
+    .content-image2 p {text-align: center; padding-left: 25px; padding-right: 25px; padding-top: 0px; font-size: 23px;}
+  
+    .border-image .content-image3 img {width: 350px; margin: 30px 230px 30px 230px; float: none; box-shadow: 20px 20px 15px 0px #091933;}
+    .content-image3 p {text-align: center; padding-left: 25px; padding-right: 25px; padding-top: 0px; font-size: 23px;}
+  
+    .border-image .content-image4 img {width: 350px; margin: 30px 230px 30px 230px; float: none; box-shadow: -20px 20px 15px 0px #36364a;}
+    .content-image4 p {text-align: center; padding-left: 25px; padding-right: 25px; padding-top: 0px; font-size: 23px;}
+  
+    .border-image .content-image5 img {width: 350px; margin: 30px 230px 30px 230px; float: none; box-shadow: 20px 20px 15px 0px #ffb6c1;}
+    .content-image5 p {text-align: center; padding-left: 25px; padding-right: 25px; padding-top: 0px; font-size: 23px;}
+  
+    .border-image .content-image6 img {width: 350px; margin: 30px 230px 30px 230px; float: none; box-shadow: -20px 20px 15px 0px #ff69b4;}
+    .content-image6 p {text-align: center; padding-left: 25px; padding-right: 25px; padding-top: 0px; font-size: 23px;}
+  
+  
+    /* ? Mengatur Kontak */
+    .title-kontak {font-size: 40px; margin: 200px 300px 0px;}
+    .border-kontak {border-radius: 0%; margin: 40px 130px; width: 650px;}
+    .border-kontak {font-size: 40px;}
+    .border-kontak h2 {font-size: 40px;}
+    .border-text {width: 650px; border-radius: 0px 0px 0px 0px;}
+    .container-kontak1 { display: block; width: 650px; margin: 15px 0px;}
+    .container-kontak2 { display: block; width: 650px; margin: 10px 0px; }
+    .form-group input { font-size: 25px; width: 450px; height: 85px;}
+    .form-group textarea { width: 500px; font-size: 30px; padding-top: 35px;}
+    .form-group button {font-size: 25px; padding: 15px 20px;}
+  }
+  
+  /* TODO Mengatur Footer */
+  .footer-basic {width: 1000px;}
+  .footer-basic ul {font-size: 12px;}
+  .footer-basic .list-inline {font-size: 30px; margin: 10px 170px 10px;}
+  .footer-basic .copyright {font-size: 25px;}
